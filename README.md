@@ -1,1 +1,2 @@
-# 25-Questions-based-on-Array
+# _Javascript Array Assignment_
+- 25 Questions based on Array
