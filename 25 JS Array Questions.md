@@ -725,6 +725,29 @@ _**Output**_
 31. Sort the webTechs array and mernStack array
 // countries Array : https://gist.github.com/incredimike/1469814
 
+_**Code**_
+```javascript
+const webTechList = ['HTML', 'CSS', 'TailwindCSS', 'JavaScript', 'C', 'C++', 'Java', 'Python', 'MongoDB', 'Express', 'React', 'Node'];
+
+const mernStack = ['MongoDB', 'Express', 'React', 'NodeJS'];
+
+console.log(webTechList.sort())
+console.log(mernStack.sort())
+```
+
+_**Output**_
+```javascript
+[
+  'C',          'C++',
+  'CSS',        'Express',
+  'HTML',       'Java',
+  'JavaScript', 'MongoDB',
+  'Node',       'Python',
+  'React',      'TailwindCSS'
+]
+[ 'Express', 'MongoDB', 'NodeJS', 'React' ]
+```
+
 32. Array Questions
     - Extract all the countries contain the word 'land' from the countries array and print it as array
     - Find the country containing the hightest number of characters in the countries array
