@@ -287,6 +287,30 @@ Enter value of y2: 10
      
 <b>15. Calculate the slope, x-intercept and y-intercept of y = 2x -2</b>
 
+_**Code**_
+
+```javascript
+   let expression = 'y=2x-2';
+   let arr = expression.split('');
+
+    console.log(arr);
+
+   let slope = Number(arr[2]);
+   let intercept=Number(arr[4]=arr[5]);
+
+   console.log(`Slope: ${slope}`);
+   console.log(`Intercept: ${intercept}`);
+```
+
+_**Output**_
+
+
+```javascript
+    [ 'y', '=', '2', 'x', '-', '2' ]
+    Slope: 2
+    Intercept: 2
+```
+
 <b>16. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.</b>
 <br>
 _**Code**_
@@ -311,6 +335,26 @@ Circumference of Circle: 31
     - YYYY-MM-DD HH:mm
     - DD-MM-YYYY HH:mm
     - DD/MM/YYYY HH:mm
+
+_**Code**_
+
+```javascript
+let getDate = new Date();
+console.log(`Format             Output`)
+console.log(`YYYY-MM-DD HH:MM = ${getDate.getFullYear()}-${getDate.getMonth()}-${getDate.getDate()}  ${getDate.getHours()}:${getDate.getMinutes()}`)
+console.log(`DD-MM-YYYY HH:mm = ${getDate.getDate()}-${getDate.getMonth()}-${getDate.getFullYear()}  ${getDate.getHours()}:${getDate.getMinutes()}`)
+console.log(`DD/MM/YYYY HH:mm = ${getDate.getDate()}/${getDate.getMonth()}/${getDate.getFullYear()}  ${getDate.getHours()}:${getDate.getMinutes()}`)
+```
+
+_**Output**_
+
+
+```javascript
+Format             Output
+YYYY-MM-DD HH:MM = 2022-09-22 12:44
+DD-MM-YYYY HH:mm = 22-09-2022 12:44
+DD/MM/YYYY HH:mm = 22/09/2022 12:44
+```
 
 <b>18. Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:'You are old enough to drive' but if not 18 give another feedback stating to wait for the number of years he needs to turn 18.</b>
 <br>
