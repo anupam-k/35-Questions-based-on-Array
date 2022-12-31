@@ -488,7 +488,26 @@ _**Output**_
 28
 30
 ```
+
 23. Write a program which tells the number of days in a month, now consider leap year.
+
+_**Code**_
+```javascript
+let todayDays = new Date();
+ function daysInMonth (month, year) {
+   return new Date(year, month, 0).getDate();
+ }
+
+daysInMonth(1,2024);
+
+console.log(daysInMonth(1,2024));
+```
+
+_**Output**_
+
+```javascript
+31
+```
 
 24. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
 
