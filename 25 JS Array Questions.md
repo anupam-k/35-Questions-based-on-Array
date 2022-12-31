@@ -548,6 +548,46 @@ _**Output**_
 
 26. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
 
+_**Code**_
+```javascript
+let countries = ["India", "Russia", "China', "Pakistan"];
+
+let find = countries.forEach(val) => {
+   if(val === "Ethiopia") {
+     console.log("Ethiopia included");
+   } else {
+   console.log("Ethiopia not included");
+   countries.push("Ethiopia");
+   console.log(countries);
+   }
+});
+
+for(let element of countries) {
+    if(element === "Ethiopia") {
+       console.log("Ethiopia included");
+    } else {
+       console.log("Ethiopia not included");
+    }
+}
+````
+
+_**Output**_
+```javascript
+Ethiopia not included
+['India', 'Russia', 'China', 'Pakistan', 'Ethiopia']
+Ethiopia not included
+['India', 'Russia', 'China', 'Pakistan', 'Ethiopia', 'Ethiopia']
+Ethiopia not included
+['India', 'Russia', 'China', 'Pakistan', 'Ethiopia', 'Ethiopia', 'Ethiopia']
+Ethiopia not included
+Ethiopia not included
+Ethiopia not included
+Ethiopia not included
+Ethiopia included
+Ethiopia included
+Ethiopia included
+Ethiopia included
+```
 <b>27. The following is an array of 10 students ages:</b><br>
    <b>=> const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]</b><br>
    <b>- Sort the array and find the min and max age</b><br>
