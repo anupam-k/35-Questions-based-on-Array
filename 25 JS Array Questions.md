@@ -761,13 +761,37 @@ _**Code**_
 // Extract all the countries contain the word 'land' from the countries array and print it as array
 function categorizeCountries(keyword) {
    if (keyword == "land") {
-     console.log(countries.filter((country) => country.endsWith("land")));
+     console.log(countries.filter((countries) => countries.endsWith("land")));
    } else {
      console.log("Country does not exits"):
    }
  }
 categorizeCountries("land");
 ```
+
+_**Output**_
+```
+[
+  'Bouvet Island',
+  'Christmas Island',
+  'Finland',
+  'Greenland',
+  'Iceland',
+  'Ireland',
+  'New Zealand',
+  'Norfolk Island',
+  'Poland',
+  'Switzerland',
+  'Thailand'
+]
+```
+
+_**Code**_
+```javascript
+// Reverse the countries array and capitalize each country and stored it as an array
+    console.log(countries.reverse(countries.toUpperCase));
+```
+
 
 <b>33. Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.</b><br>
     <b>- The same groups apply to both men and women.</b><br>
